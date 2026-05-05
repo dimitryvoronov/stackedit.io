@@ -8,7 +8,10 @@ bgp: Enabled
 кажд нода калико имеет связь (bgp session) с другой
 10.210.128.128/27 - vlan dedicated for k8s
 10.210.131.0/25 - dedicated subnet to see k8s services in network?
+/25 дает не более 128 кластер сервисов доступно получается
+
 172.31.252.0/22 -  calico subnet
+pod cidr 
 
 
 
@@ -71,5 +74,5 @@ bgp: Enabled
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ3NjY0MjksLTE4NDk3ODY5NTZdfQ==
+eyJoaXN0b3J5IjpbMTc5NDk5NDk2MywtMTg0OTc4Njk1Nl19
 -->
