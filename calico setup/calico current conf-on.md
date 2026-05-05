@@ -1,11 +1,17 @@
 ## calico conf-on
 
 
-# node-to-node BGP mesh
+### node-to-node BGP mesh
 based on
 nodeToNodeMeshEnabled: true
 bgp: Enabled
 кажд нода калико имеет связь (bgp session) с другой
+10.210.128.128/27 - vlan dedicated for k8s
+10.210.131.0/25 - dedicated subnet to see k8s services in network?
+172.31.252.0/22 -  calico subnet
+
+
+
 
 ```yaml
 ++++
@@ -20,7 +26,7 @@ logSeverityScreen: Info
 nodeToNodeMeshEnabled: true
 asNumber: 65000
 serviceClusterIPs:
-- cidr: 10.210.131.0/25 -  доступ к сервисам кубера для уровня VM/hyper-v ?
+- cidr: 10.210.131.0/25 -  доступ к сервисам кубера для уровня V
 ---
 apiVersion: crd.projectcalico.org/v1
 kind: BGPPeer
@@ -65,5 +71,5 @@ bgp: Enabled
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDk3ODY5NTZdfQ==
+eyJoaXN0b3J5IjpbNTQ3NjY0MjksLTE4NDk3ODY5NTZdfQ==
 -->
