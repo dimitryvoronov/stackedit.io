@@ -3,6 +3,10 @@
 
 # node-to-node BGP mesh
 based on
+nodeToNodeMeshEnabled: true
+bgp: Enabled
+кажд нода калико имеет связь с другой
+
 ```yaml
 ++++
 ---
@@ -11,21 +15,12 @@ kind: BGPConfiguration
 metadata:
 # name: ru-dc1s-a-int
 name: default
-
 spec:
-
 logSeverityScreen: Info
-
 nodeToNodeMeshEnabled: true
-
 asNumber: 65000
-
 serviceClusterIPs:
-
 - cidr: 10.210.131.0/25
-
-  
-
 ---
 apiVersion: crd.projectcalico.org/v1
 kind: BGPPeer
@@ -70,5 +65,5 @@ bgp: Enabled
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjQ1ODQ5MjddfQ==
+eyJoaXN0b3J5IjpbLTc3MjI5OTMwN119
 -->
