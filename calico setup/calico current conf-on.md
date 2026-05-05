@@ -5,7 +5,7 @@
 based on
 nodeToNodeMeshEnabled: true
 bgp: Enabled
-кажд нода калико имеет связь с другой
+кажд нода калико имеет связь (bgp session) с другой
 
 ```yaml
 ++++
@@ -20,7 +20,7 @@ logSeverityScreen: Info
 nodeToNodeMeshEnabled: true
 asNumber: 65000
 serviceClusterIPs:
-- cidr: 10.210.131.0/25
+- cidr: 10.210.131.0/25 -  доступ к сервисам кубера для уровня VM/hyper-v ?
 ---
 apiVersion: crd.projectcalico.org/v1
 kind: BGPPeer
@@ -65,5 +65,5 @@ bgp: Enabled
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MjI5OTMwN119
+eyJoaXN0b3J5IjpbLTE4NDk3ODY5NTZdfQ==
 -->
