@@ -12,7 +12,7 @@ bgp: Enabled
 
 172.31.252.0/22 -  calico subnet
 pod cidr 
-block /26 here, so 
+block /26 here
 
 
 
@@ -76,6 +76,6 @@ bgp: Enabled
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTYwMTExOTMsNTA3MjI0ODUsLTE4ND
-k3ODY5NTZdfQ==
+eyJoaXN0b3J5IjpbLTIwNTk2NzQ1ODUsLTEyMTYwMTExOTMsNT
+A3MjI0ODUsLTE4NDk3ODY5NTZdfQ==
 -->
